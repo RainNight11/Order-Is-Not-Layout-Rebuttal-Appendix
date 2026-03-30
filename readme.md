@@ -1,6 +1,6 @@
 # Rebuttal Appendix -- Order Is Not Layout: Order-to-Space Bias in Image Generation
 
-## Tabel 1.
+## Table 1.
 
 *Detector-assisted judging with Grounding-DINO. We evaluate a hybrid variant where Grounding-DINO provides auxiliary localization after validity screening by Qwen3-VL-8B. Results are reported on the same 2,400 human-annotated samples. The improvement is modest while incurring additional inference cost.*
 

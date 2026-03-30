@@ -1,8 +1,8 @@
 # Rebuttal Appendix: Order Is Not Layout: Order-to-Space Bias in Image Generation
 
-## Table 1. Quantitative comparison of generation quality
+## Table 1: 
 
-CLIPScore (↑) measures semantic alignment, while FID (↓) evaluates distribution similarity to real images. FID is computed on MSCOCO2017 validation set with 200 generated samples per model.
+*CLIPScore (↑) measures semantic alignment between generated images and prompts, while FID (↓) evaluates distribution similarity to real images. FID is computed on the MSCOCO2017 validation set with 200 generated samples per model.*
 
 | Model | CLIPScore ↑ | FID ↓ |
 |---|---:|---:|
@@ -11,9 +11,9 @@ CLIPScore (↑) measures semantic alignment, while FID (↓) evaluates distribut
 | Qwen-Image | **26.37** | 229.15 |
 | Qwen-LoRA | 26.25 | 226.11 |
 
-## Table 2. Invalid rates under different evaluation settings
+## Table 2: 
 
-Invalid rate (↓) is the proportion of invalid samples under Hom, Ali, and Rev settings for both T2I and I2I tasks.
+*Invalid rate (↓) denotes the proportion of invalid samples under Hom, Ali, and Rev settings for both T2I and I2I tasks.*
 
 | Model | T2I Hom ↓ | T2I Ali ↓ | T2I Rev ↓ | I2I Hom ↓ | I2I Ali ↓ | I2I Rev ↓ |
 |---|---:|---:|---:|---:|---:|---:|
@@ -28,9 +28,9 @@ Invalid rate (↓) is the proportion of invalid samples under Hom, Ali, and Rev 
 | NanoBanana 1 | 3.88% (66/1700) | 4.75% (19/400) | 7.50% (30/400) | 2.64% (29/1100) | 3.18% (35/1100) | 3.55% (39/1100) |
 
 
-## Table 3. Full 3-class confusion matrices between human annotations and different VL judges
+## Table 3: 
 
-Full 3-class confusion matrices (labels 0/1/2) between human annotations (rows) and VL judges (columns) on the 2,400-sample validation set. Each judge occupies a 4×4 block including marginal totals. Cohen’s κ is reported in the header.
+*Full 3-class confusion matrices (labels 0/1/2) between human annotations (rows) and VL judges (columns) on the 2,400-sample validation set. Each judge occupies a 4×4 block including marginal totals, with Cohen’s κ reported in the header.*
 
 <table>
   <thead>
@@ -93,11 +93,11 @@ Full 3-class confusion matrices (labels 0/1/2) between human annotations (rows) 
   </tbody>
 </table>
 
-## Table 4. OTS bias under multi-entity and diverse spatial layouts
+## Table 4: 
 
-We extend OTS-Bench beyond two-entity left–right settings to (i) three-entity compositions and (ii) alternative spatial layouts (up–down and front–behind). We report homogenization (Hom), alignment correctness (Ali/Rev), and OTS score. The results suggest that OTS behavior extends to multi-entity settings, while its effect under non-horizontal layouts appears less consistent.
+*Evaluation of OTS behavior beyond two-entity left–right settings, including three-entity compositions and alternative spatial layouts (up–down and front–behind). We report homogenization (Hom), alignment correctness (Ali/Rev), and OTS score.*
 
-### (a) Three-entity setting
+*(a) Results on three-entity compositions, showing that OTS behavior extends beyond two-entity settings.*
 
 | Model | T2I Hom (Ord./Oth./Inv.) | T2I OTS ↑ | I2I Hom (Ord./Oth./Inv.) | I2I OTS ↑ | Ali (Cor./Oth./Inv.) | Corr. Ali ↑ | Rev (Cor./Oth./Inv.) | Corr. Rev ↑ | Δ |
 |---|---|---:|---|---:|---|---:|---|---:|---:|
@@ -108,7 +108,7 @@ We extend OTS-Bench beyond two-entity left–right settings to (i) three-entity 
 | NanoBanana 1 | 223 / 243 / 34 | 44.6 | 194 / 268 / 38 | 38.8 | 60 / 29 / 11 | **67.4** | 40 / 48 / 12 | **45.5** | 21.9 |
 
 
-### (b) Alternative spatial layouts (non-horizontal)
+*(b) Results on alternative spatial layouts (up–down and front–behind), where the OTS effect appears less consistent compared to horizontal layouts.*
 
 | Model | Up-Down A | Up-Down B | Up-Down Invalid | Up-Down OTS ↑ | Front-Behind A | Front-Behind B | Front-Behind Invalid | Front-Behind OTS ↑ |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|

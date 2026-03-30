@@ -1,6 +1,17 @@
 # Rebuttal Appendix -- Order Is Not Layout: Order-to-Space Bias in Image Generation
 
-## Table 1. 
+## Tabel 1.
+
+*Detector-assisted judging with Grounding-DINO. We evaluate a hybrid variant where Grounding-DINO provides auxiliary localization after validity screening by Qwen3-VL-8B. Results are reported on the same 2,400 human-annotated samples. The improvement is modest while incurring additional inference cost.*
+
+
+| Method | Accuracy ↑ | Cohen’s κ ↑ | Avg. time / image ↓ |
+|---|---:|---:|---:|
+| Qwen3-VL-8B-Instruct | 90.42% | 0.811 | 0.355 s |
+| Qwen3-VL-8B + Grounding-DINO-assisted | **91.13%** | **0.825** | 0.543 s |
+| Δ | +0.71 pts | +0.014 | +0.187 s (+52.7%) |
+
+## Table 2. 
 
 *CLIPScore (↑) measures semantic alignment between generated images and prompts, while FID (↓) evaluates distribution similarity to real images. FID is computed on the MSCOCO2017 validation set with 200 generated samples per model.*
 
@@ -11,7 +22,7 @@
 | Qwen-Image | **26.37** | 229.15 |
 | Qwen-LoRA | 26.25 | 226.11 |
 
-## Table 2. 
+## Table 3. 
 
 *Invalid rate (↓) denotes the proportion of invalid samples under Hom, Ali, and Rev settings for both T2I and I2I tasks.*
 
@@ -27,7 +38,7 @@
 | GPT-Image | 3.12% | 7.50% | 8.25% | 3.18% | 2.82% | 4.36% |
 | NanoBanana 1 | 3.88% | 4.75% | 7.50% | 2.64% | 3.18% | 3.55% |
 
-## Table 3. 
+## Table 4. 
 
 *Full 3-class confusion matrices (labels 0/1/2) between human annotations (rows) and VL judges (columns) on the 2,400-sample validation set. Each judge occupies a 4×4 block including marginal totals, with Cohen’s κ reported in the header.*
 
@@ -92,7 +103,7 @@
   </tbody>
 </table>
 
-## Table 4. 
+## Table 5. 
 
 *Evaluation of OTS behavior beyond two-entity left–right settings, including three-entity compositions and alternative spatial layouts (up–down and front–behind). We report homogenization (Hom), alignment correctness (Ali/Rev), and OTS score.*
 

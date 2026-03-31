@@ -72,16 +72,19 @@
 <table>
   <thead>
     <tr>
-      <th rowspan="2">Human</th>
+      <th rowspan="3">Human</th>
+      <th colspan="8">Newly added judges</th>
+      <th colspan="16">Original judges</th>
+    </tr>
+    <tr>
+      <th colspan="4">GPT-5.4 (κ = 0.79)</th>
+      <th colspan="4">Gemini-3.1-Pro (κ = 0.85)</th>
       <th colspan="4">Qwen3-VL-8B-Instruct (κ = 0.81)</th>
       <th colspan="4">LLaMA-3.2-11B-Vision (κ = 0.62)</th>
       <th colspan="4">InternVL3-8B (κ = 0.72)</th>
       <th colspan="4">LLaVA-Critic-7B (κ = 0.47)</th>
-      <th colspan="4">GPT-5.4 (κ = 0.79)</th>
-      <th colspan="4">Gemini-3.1-Pro (κ = 0.85)</th>
     </tr>
     <tr>
-      <!-- repeated header -->
       <th>0</th><th>1</th><th>2</th><th>Total</th>
       <th>0</th><th>1</th><th>2</th><th>Total</th>
       <th>0</th><th>1</th><th>2</th><th>Total</th>
@@ -93,43 +96,42 @@
   <tbody>
     <tr>
       <td>0</td>
+      <td>222</td><td>12</td><td>5</td><td>239</td>
+      <td>225</td><td>12</td><td>2</td><td>239</td>
       <td>224</td><td>11</td><td>4</td><td>239</td>
       <td>207</td><td>19</td><td>13</td><td>239</td>
       <td>209</td><td>19</td><td>11</td><td>239</td>
       <td>183</td><td>37</td><td>19</td><td>239</td>
-      <td>222</td><td>12</td><td>5</td><td>239</td>
-      <td>225</td><td>12</td><td>2</td><td>239</td>
     </tr>
     <tr>
       <td>1</td>
+      <td>82</td><td>1466</td><td>51</td><td>1599</td>
+      <td>65</td><td>1500</td><td>34</td><td>1599</td>
       <td>94</td><td>1475</td><td>30</td><td>1599</td>
       <td>103</td><td>1377</td><td>119</td><td>1599</td>
       <td>96</td><td>1471</td><td>32</td><td>1599</td>
       <td>92</td><td>1342</td><td>165</td><td>1599</td>
-      <td>82</td><td>1466</td><td>51</td><td>1599</td>
-      <td>65</td><td>1500</td><td>34</td><td>1599</td>
     </tr>
     <tr>
       <td>2</td>
+      <td>25</td><td>79</td><td>458</td><td>562</td>
+      <td>20</td><td>50</td><td>492</td><td>562</td>
       <td>35</td><td>56</td><td>471</td><td>562</td>
       <td>31</td><td>178</td><td>353</td><td>562</td>
       <td>18</td><td>154</td><td>390</td><td>562</td>
       <td>19</td><td>281</td><td>262</td><td>562</td>
-      <td>25</td><td>79</td><td>458</td><td>562</td>
-      <td>20</td><td>50</td><td>492</td><td>562</td>
     </tr>
     <tr>
       <td><b>Total</b></td>
-      <td><b>353</b></td><td><b>1542</b></td><td><b>505</b></td><td><b>2400</b></td>
-      <td><b>341</b></td><td><b>1574</b></td><td><b>485</b></td><td><b>2400</b></td>
-      <td><b>323</b></td><td><b>1644</b></td><td><b>433</b></td><td><b>2400</b></td>
-      <td><b>294</b></td><td><b>1660</b></td><td><b>446</b></td><td><b>2400</b></td>
       <td><b>329</b></td><td><b>1557</b></td><td><b>514</b></td><td><b>2400</b></td>
       <td><b>310</b></td><td><b>1562</b></td><td><b>528</b></td><td><b>2400</b></td>
+      <td><b>353</b></td><td><b>1542</b></td><td><b>505</b></td><td><b>2400</b></td>
+      <td><b>341</b></td><td><b>1574</b></td><td><b>485</b></td><td><b>2400</b></td>
+      <td><b>323</b></td><td><b>1644</td><td><b>433</b></td><td><b>2400</b></td>
+      <td><b>294</b></td><td><b>1660</b></td><td><b>446</b></td><td><b>2400</b></td>
     </tr>
   </tbody>
 </table>
-
 
 ## Figure 1. 
 

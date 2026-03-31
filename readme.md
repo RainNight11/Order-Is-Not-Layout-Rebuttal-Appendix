@@ -6,9 +6,9 @@
 
 | Model | CLIPScore ↑ | FID ↓ |
 |---|---:|---:|
-| FLUX-dev | 24.35 | **220.24** |
+| FLUX-dev | 24.35 | 220.24 |
 | FLUX-dev-LoRA | 24.03 | 223.68 |
-| Qwen-Image | **26.37** | 229.15 |
+| Qwen-Image | 26.37 | 229.15 |
 | Qwen-LoRA | 26.25 | 226.11 |
 
 ## Table 2.
@@ -19,7 +19,7 @@
 | Method | Accuracy ↑ | Cohen’s κ ↑ | Avg. time / image ↓ |
 |---|---:|---:|---:|
 | Qwen3-VL-8B-Instruct | 90.42% | 0.811 | 0.355 s |
-| Qwen3-VL-8B + Grounding-DINO-assisted | **91.13%** | **0.825** | 0.543 s |
+| Qwen3-VL-8B + Grounding-DINO-assisted | 91.13% | 0.825 | 0.543 s |
 | Δ | +0.71 pts | +0.014 | +0.187 s (+52.7%) |
 
 
@@ -48,11 +48,11 @@
 
 | Model | T2I Hom (Ord./Oth./Inv.) | T2I OTS ↑ | I2I Hom (Ord./Oth./Inv.) | I2I OTS ↑ | Ali (Cor./Oth./Inv.) | Corr. Ali ↑ | Rev (Cor./Oth./Inv.) | Corr. Rev ↑ | Δ |
 |---|---|---:|---|---:|---|---:|---|---:|---:|
-| Qwen-Image | 331 / 41 / 128 | **66.2** | 251 / 153 / 96 | **50.2** | 44 / 25 / 31 | 63.8 | 25 / 41 / 34 | 37.9 | **25.9** |
+| Qwen-Image | 331 / 41 / 128 | 66.2 | 251 / 153 / 96 | 50.2 | 44 / 25 / 31 | 63.8 | 25 / 41 / 34 | 37.9 | 25.9 |
 | FLUX-dev | 287 / 51 / 162 | 57.4 | 208 / 183 / 109 | 41.6 | 41 / 25 / 34 | 62.1 | 24 / 40 / 36 | 37.5 | 24.6 |
 | SD3.5 | 264 / 62 / 174 | 52.8 | 203 / 174 / 123 | 40.6 | 39 / 25 / 36 | 60.9 | 23 / 40 / 37 | 36.5 | 24.4 |
 | GPT-Image | 234 / 203 / 63 | 46.8 | 175 / 278 / 47 | 35.0 | 55 / 28 / 17 | 66.3 | 35 / 47 / 18 | 42.7 | 23.6 |
-| NanoBanana 1 | 223 / 243 / 34 | 44.6 | 194 / 268 / 38 | 38.8 | 60 / 29 / 11 | **67.4** | 40 / 48 / 12 | **45.5** | 21.9 |
+| NanoBanana 1 | 223 / 243 / 34 | 44.6 | 194 / 268 / 38 | 38.8 | 60 / 29 / 11 | 67.4 | 40 / 48 / 12 | 45.5 | 21.9 |
 
 
 *(b) Results on alternative spatial layouts (up–down and front–behind), where the OTS effect appears less consistent compared to horizontal layouts.*
@@ -60,10 +60,10 @@
 | Model | Up-Down A | Up-Down B | Up-Down Invalid | Up-Down OTS ↑ | Front-Behind A | Front-Behind B | Front-Behind Invalid | Front-Behind OTS ↑ |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | Qwen-Image | 41 | 28 | 31% | 18.8 | 37 | 30 | 33% | 10.4 |
-| FLUX-dev | 36 | 20 | 34% | **28.6** | 28 | 33 | 39% | 8.2 |
+| FLUX-dev | 36 | 20 | 34% | 28.6 | 28 | 33 | 39% | 8.2 |
 | SD3.5 | 27 | 29 | 44% | 3.6 | 38 | 27 | 35% | 16.9 |
 | GPT-Image | 36 | 45 | 19% | 11.1 | 33 | 44 | 23% | 14.3 |
-| NanoBanana 1 | 37 | 49 | **14%** | 14.0 | 51 | 31 | **18%** | **24.4** |
+| NanoBanana 1 | 37 | 49 | 14% | 14.0 | 51 | 31 | 18% | 24.4 |
 
 ## Table 5. 
 
